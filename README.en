@@ -1,0 +1,55 @@
+================================================================
+ witness: A PHP Extension for trace/debug/monitor.
+ Copyright (c) 2013 UCWeb Inc.
+================================================================
+
+witness is released under the terms of the Apache License version 2
+See the file `LICENSE' for details.
+
+Package description
+
+  README.en        - This file
+  README.chs       - Readme in Simplified Chinese
+  LICENSE          - License
+  ./witness        - Source code of witness
+  ./include        - include header files
+
+Introduction
+
+1. Depends
+  operating system - Linux/*nix (i686/x86_64/amd64)
+  gcc version      - >= 4.1.2
+  PHP version      - >= 5.3.3
+
+2. Building and installation 
+  $ cd witness
+  $ phpize && ./configure && make && make install
+
+3. php.ini
+  Add the following to your php.ini file :
+  [xhprof]
+  extension=witness.so
+
+4. check
+  $ php -m | grep witness
+  witness
+
+5. show info
+  $ php -i | grep witness
+  witness
+  witness support => enabled
+  witness.auto_start_token => no value => no value
+  witness.enable_assert => false => false
+  witness.enable_dump => 1 => 1
+  witness.keep_record => false => false
+  witness.max_stack => 16384 => 16384
+  witness.post_url => no value => no value
+  witness.record_internal => 1 => 1
+  witness.temp_path => /dev/shm => /dev/shm
+
+
+Please contact the oswitness@ucweb.com if you have any questions.
+
+Thanks.
+
+== END OF FILE ==
